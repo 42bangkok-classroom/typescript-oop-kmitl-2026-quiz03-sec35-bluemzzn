@@ -5,7 +5,7 @@ export class Playstation extends Product {
   static readonly DISCOUNT_PERCENT: number = 10;
   public generation : number = 0; 
 
-  constructor(name : string, price: number = 0 , generation : number = 0){
+  constructor(name : string, generation : number = 0, price: number = 0){
     super(name,price);
     this.generation = generation;
   }
