@@ -1,7 +1,10 @@
 export class Product {
-  public readonly name: string = "";
+  public readonly name: string;
   private price: number = 0;
-  constructor(name?: string, price?: number) {}
+  constructor(name: string = '', price: number = 0) {
+    this.name = name;
+    this.price = price;
+  }
 
   getPrice(): number {
     return this.price;
