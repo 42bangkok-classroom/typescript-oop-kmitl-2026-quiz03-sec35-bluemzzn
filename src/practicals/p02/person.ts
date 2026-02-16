@@ -1,9 +1,9 @@
 export class Person {
   public firstname: string = '';
   public lastname: string = '';
-  private age: number;
-  static COUNTRY : string;
-  constructor(firstname: string, lastname: string, age: number) {
+  private age: number = 0;
+  static COUNTRY : string = 'Thailand';
+  constructor(firstname: string = '', lastname: string = '', age: number = 0) {
     this.firstname = firstname ;
     this.lastname = lastname;
     this.age = age;
