@@ -10,10 +10,10 @@ export class Playstation extends Product {
     this.generation = generation;
   }
 
-  getProfile(){
+  getProfile(): string{
     return `${this.name} (Gen ${this.generation})`;
   }
-  getDiscountPrice(){
+  getDiscountPrice(): number{
     const discount = this.getPrice() * (Playstation.DISCOUNT_PERCENT / 100);
     return this.getPrice() - discount;
   }
