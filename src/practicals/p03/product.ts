@@ -1,7 +1,9 @@
 export class Product {
   public readonly name: string;
   private price: number = 0;
-  constructor(name: string = '', price: number = 0) {
+  static readonly DISCOUNT_PERCENT: number = 10;
+
+  constructor(name: string = "", price: number = 0) {
     this.name = name;
     this.price = price;
   }
