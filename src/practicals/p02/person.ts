@@ -9,8 +9,8 @@ export class Person {
     this.age = age;
   }
 
-  setAge(): number {
-    return this.age;
+  setAge(): void {
+    this.age;
   }
 
   getAge(): number {
